@@ -26,6 +26,7 @@ export default function() {
     .addFlag("log", "whether to output log")
     .addFlag("watch", "regenerate React component on solidity file change")
     .setAction(async (args, bre) => {
+      console.log(bre);
       await bre.run("react:run", args);
     });
 }
