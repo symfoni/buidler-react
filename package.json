@@ -1,13 +1,14 @@
 {
-  "name": "@nomiclabs/buidler-ts-plugin-boilerplate",
+  "name": "@symfoni/buidler-react",
   "version": "0.0.1",
-  "description": "Buidler TypeScript plugin boilerplate",
-  "repository": "github:nomiclabs/buidler-ts-plugin-boilerplate",
-  "author": "Nomic Labs LLC",
+  "description": "React Frontend Buidler TypeScript",
+  "repository": "github:symfoni/buidler-symfoni-reacte",
+  "author": "Symfoni",
   "license": "MIT",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "keywords": [
+    "react",
     "ethereum",
     "smart-contracts",
     "buidler",
