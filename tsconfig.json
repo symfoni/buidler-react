@@ -12,5 +12,6 @@
   },
   // "files": [], // Any Buidler plugin's main .d.ts has to be added here
   "exclude": ["dist", "node_modules"],
-  "include": ["./test", "./src"]
+  "include": ["./test", "./src"],
+  "files": ["node_modules/buidler-deploy/src/type-extensions.d.ts"]
 }

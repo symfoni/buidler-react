@@ -39,13 +39,18 @@
     "mocha": "^5.2.0",
     "prettier": "^1.17.0",
     "source-map-support": "^0.5.12",
-    "ts-node": "^8.1.0",
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^3.4.5"
+    "buidler-deploy": "^0.6.0-beta.16",
+    "ts-generator": "0.0.8",
+    "ts-node": "^9.0.0",
+    "typechain": "^2.0.0",
+    "typescript": "^4.0.3"
   },
   "peerDependencies": {
-    "@nomiclabs/buidler": "^1.0.1"
+    "@nomiclabs/buidler": "^1.0.1",
+    "buidler-deploy": "^0.6.0-beta.16",
+    "@blockchangers/buidler-typechain": "^0.1.6"
   }
 }

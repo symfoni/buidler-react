@@ -1,5 +1,9 @@
 import { extendConfig, internalTask, task } from "@nomiclabs/buidler/config";
 // import { lazyObject } from "@nomiclabs/buidler/plugins";
+import { readArtifactSync, readArtifact } from "@nomiclabs/buidler/plugins";
+
+import path from "path";
+import fs from "fs-extra";
 
 export default function() {
   /* extend config */
@@ -26,7 +30,32 @@ export default function() {
     .addFlag("log", "whether to output log")
     .addFlag("watch", "regenerate React component on solidity file change")
     .setAction(async (args, bre) => {
-      console.log(bre);
+      const getArtifact = async (contractName: string): Promise<any> => {
+        let artifact;
+        try {
+          artifact = await readArtifact(
+            bre.config.paths.artifacts,
+            contractName
+          );
+        } catch (e) {
+          try {
+            artifact = await readArtifact(
+              bre.config.paths.imports ||
+                path.join(bre.config.paths.root, "imports"),
+              contractName
+            );
+          } catch (ee) {
+            throw e;
+          }
+        }
+        return artifact;
+      };
+      // get all typechains objects
+      // for each typechain object
+      // Check if it has deployment, then add code that will connect contract init to that instace
+
+      // Get
+      console.log(await bre.deployments.all());
       await bre.run("react:run", args);
     });
 }
