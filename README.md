@@ -1,14 +1,17 @@
-Our Contribution to the ETHOnline hackathon
+Part of contribution to the ETHOnline hackathon
 =========================================
 
 ### We wish to improve the output of Buidler, and include Textile out of the box.
 
-There are three Github repositories as part of our project. They are all part of the hackathon:
+There are several Github repositories as part of our project. They are all part of the hackathon:
 
 * [**buidler-symfoni-demo**](https://github.com/symfoni/buidler-symfoni-demo)
-* buidler-react (this project)
+* fork and changes to buidler-react (this project)
+* [fork and changes to buidler-typechain](https://github.com/symfoni/buidler-typechain)
 * [buidler-plugins](https://github.com/symfoni/buidler-plugins)
+* [buidler-react-boilerplate](https://github.com/symfoni/buidler-react-boilerplate)
 
+The files under `src\defaults` are copied into new Symfoni projects.
 
 # Buidler TypeScript plugin boilerplate
 
